@@ -24,7 +24,6 @@ Once your functions have been published, a custom topic needs to be configured i
 
 ```kql
 // Summarise each scan request, showing file type, size, name, and time taken
-// 12/4/2023 10:20-10:34
 traces
 | project EventId = toint(customDimensions.EventId),
           CorrelationId = tostring(customDimensions.prop__CorrelationId),
